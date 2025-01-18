@@ -1,0 +1,55 @@
+/* Creating mobile styling */
+@media (min-width: 849.95px) {
+  .nav-items .nav-link:hover {
+    border-bottom: 2px solid var(--primary-color);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-container nav {
+    padding: 0.6rem 2vw;
+  }
+
+  nav .toggle {
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: auto;
+    gap: 0.25rem;
+    padding: 0.2rem;
+  }
+
+  nav .toggle .bar {
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+  }
+
+  nav .logo {
+    font-size: 1rem;
+  }
+
+  .nav-container nav .nav-items {
+    gap: 1.2rem;
+    position: absolute;
+    top: 50px;
+    background: var(--nav-color-small-screen);
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    height: 0;
+    overflow: hidden;
+    transition: ease-out 250ms;
+    -webkit-transition: ease-out 250ms;
+    -moz-transition: ease-out 250ms;
+    -ms-transition: ease-out 250ms;
+    -o-transition: ease-out 250ms;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* End of mobile styling */

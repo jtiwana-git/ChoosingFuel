@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Universal styling */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+/* End of universal styling */
+
+/* Creating CSS variables */
+:root {
+  --body-color: rgb(230, 230, 238);
+  --primary-color: rgba(87, 83, 214, 0.833);
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --nav-color-small-screen: rgb(208, 208, 233);
+}
+/* End of CSS variables */
+
+/* Creating style of the body */
+body,
+.card {
+  background: var(--body-color);
+  min-height: 100vh;
+}
+
+/* Create Dark Mode */
+body.dark,
+.card.dark {
+  --body-color: rgb(24, 25, 26);
+  --primary-color: rgba(87, 83, 214, 0.833);
+  --primary-color-light: rgb(54, 80, 105);
+  --toggle-color: #fff;
+  --text-color: white;
+  --nav-color-small-screen: #202122;
+  color: white;
+}
+
+/* End Dark Mode */
+/* End of style of the body */
+
+/* Creating style of the text */
+.text,
+.card {
+  color: var(--text-color);
+}
+/* End of style of the text */
+
+/* Creating Navbar styles */
+.nav-container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.6rem 10vh;
+  align-items: center;
+  box-shadow: 0 2px 5px 0px rgba(112, 112, 112, 0.1);
+  position: relative;
+}
+
+.nav-container nav .nav-items {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-container nav .logo {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.nav-items .nav-link {
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  transition: ease-in 250ms;
+  -webkit-transition: ease-in 250ms;
+  -moz-transition: ease-in 250ms;
+  -o-transition: ease-in 250ms;
+}
+/* End of Navbar */
+
+/* Creating toggle mode */
+nav .mode {
+  display: flex;
+  position: relative;
+  align-self: center;
+  height: 100%;
+}
+
+nav .mode .moon-icon,
+nav .mode .sun-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -20;
+  margin-top: -15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  background: var(--nav-color-small-screen);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+}
+
+body.dark nav .mode .sun-icon {
+  background: var(--primary-color-light);
+}
+
+nav .mode .moon-icon:hover,
+nav .mode .sun-icon:hover {
+  background-color: var(--primary-color);
+}
+
+nav .mode .moon-icon:hover .icon,
+nav .mode .sun-icon:hover .icon {
+  color: var(--primary-color-light);
+}
+
+nav .mode .sun-icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.dark nav .mode .sun-icon:hover .icon {
+  color: var(--text-color);
+}
+
+body.dark nav .mode .sun-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.dark nav .mode .moon-icon {
+  opacity: 1;
+  visibility: hidden;
+}
+
+nav .mode .icon {
+  font-size: 1rem;
+}
+
+.nav-container nav .nav-items.navisActive {
+  top: 45px;
+  height: 60vh;
+  opacity: 1;
+  visibility: visible;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle.toggleActive .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+  -webkit-transfrom: translateY(7px) rotate(45deg);
+  -moz-transform: translateY(7px) rotate(45deg);
+  -ms-transform: translateY(7px) rotate(45deg);
+  -o-transform: translateY(7px) rotate(45deg);
+}
+
+.toggle.toggleActive .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  -webkit-transfrom: translateY(-7px) rotate(-45deg);
+  -moz-transform: translateY(-7px) rotate(-45deg);
+  -ms-transform: translateY(-7px) rotate(-45deg);
+  -o-transform: translateY(-7px) rotate(-45deg);
+}
+
+.toggle.toggleActive .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-container nav .mode {
+  margin-top: 8px;
+}
+
+.nav-container nav .mode .icon {
+  font-size: 1rem;
+}
+
+/* End of toggle mode */
+
+/* Petrol - col */
+.petrol-col1 {
+  margin: 5px;
+  width: auto;
+}
+
+.petrol-fuel-pump {
+  margin: 5px;
+  width: 350px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message #success {
+  display: none;
+}
+
+.message #danger {
+  display: none;
+}
