@@ -18,6 +18,7 @@ ul,
 li {
   list-style-type: none;
 }
+
 /* End of universal styling */
 
 /* Creating CSS variables */
@@ -43,7 +44,7 @@ body.dark,
 .card.dark {
   --body-color: rgb(24, 25, 26);
   --primary-color: rgba(87, 83, 214, 0.833);
-  --primary-color-light: rgb(54, 80, 105);
+  --primary-color-light: rgb(58, 59, 60);
   --toggle-color: #fff;
   --text-color: white;
   --nav-color-small-screen: #202122;
@@ -93,6 +94,62 @@ body.dark,
   -o-transition: ease-in 250ms;
 }
 /* End of Navbar */
+
+/* Creating mobile styling */
+@media (min-width: 849.95px) {
+  .nav-items .nav-link:hover {
+    border-bottom: 2px solid var(--primary-color);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-container nav {
+    padding: 0.6rem 2vw;
+  }
+
+  nav .toggle {
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: auto;
+    gap: 0.25rem;
+    padding: 0.2rem;
+  }
+
+  nav .toggle .bar {
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+  }
+
+  nav .logo {
+    font-size: 1rem;
+  }
+
+  .nav-container nav .nav-items {
+    gap: 1.2rem;
+    position: absolute;
+    top: 50px;
+    background: var(--nav-color-small-screen);
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    height: 0;
+    overflow: hidden;
+    transition: ease-out 250ms;
+    -webkit-transition: ease-out 250ms;
+    -moz-transition: ease-out 250ms;
+    -ms-transition: ease-out 250ms;
+    -o-transition: ease-out 250ms;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* End of mobile styling */
 
 /* Creating toggle mode */
 nav .mode {

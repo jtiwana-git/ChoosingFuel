@@ -6,8 +6,8 @@ modified Date: 18/01/2025
 Author: Jagdeep Tiwana
 */
 
-const toggle = document.querySelectorAll(".icon-container");
 const body = document.querySelector("body");
+const toggle = document.querySelectorAll(".icon-container");
 const navItems = document.querySelector(".nav-items");
 const navToggle = document.querySelector(".toggle");
 const toggleActive = document.querySelector(".toggleActive");
