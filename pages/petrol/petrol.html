@@ -145,9 +145,49 @@
       </div>
       <!-- End Pros and Cons -->
       <!-- Start of form -->
-      <!-- End of form -->
-      <!-- Start of table -->
-      <!-- End of table -->
+      <div class="container-fluid mt-4">
+        <form class="mt-4" id="comment-form">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="col-md-6 mt-4">
+            <label for="comment" class="form-label">Comment</label>
+          </div>
+          <div class="col-md-6">
+            <textarea
+              class="form-control"
+              name="comment"
+              placeholder="Leave a comment here"
+              id="comment"
+              style="height: 100px"
+            ></textarea>
+          </div>
+          <div class="col-md-6 mt-4">
+            <button type="submit" class="btn btn-primary" id="add">Add</button>
+          </div>
+          <!-- Start of table -->
+          <table class="table mt-4" style="width: 100%">
+            <thead>
+              <tr class="table" style="border-top: 2px solid transparent">
+                <th scope="col" style="background: transparent">Name</th>
+                <th scope="col" style="background: transparent">Comment</th>
+              </tr>
+            </thead>
+            <tbody id="comment-list">
+              <!-- elements -->
+            </tbody>
+          </table>
+          <!-- End of table -->
+          <!-- End of form -->
+        </form>
+      </div>
     </div>
     <!-- Link to JavaScript -->
     <script src="../../script.js"></script>
