@@ -3,9 +3,210 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- External link to CSS -->
+    <!-- External link to Bootstrap CSS (Icon) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- External link to Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Internal link to CSS -->
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- Media CSS -->
+    <link rel="stylesheet" href="../../mediaqueries.css" />
+    <title>Type of fuel</title>
   </head>
   <body>
-    <h1>Template of Mild hybrid</h1>
+    <!-- Start Navbar -->
+    <div class="nav-container">
+      <nav>
+        <div class="toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-link" class="text">
+            <a href="../../index.html">Home</a>
+          </li>
+          <li class="nav-link" class="text">
+            <a href="../petrol/petrol.html">Petrol</a>
+          </li>
+          <li class="nav-link" class="text">
+            <a href="../diesel/diesel.html">Diesel</a>
+          </li>
+          <li class="nav-link" class="text">
+            <a href="./mild_hybrid.html">Mild Hybrid</a>
+          </li>
+          <li class="nav-link" class="text">
+            <a href="../plugin/plugin_hybrid.html">Plugin Hybrid</a>
+          </li>
+          <li class="nav-link" class="text">
+            <a href="../electric/electric.html">Electric</a>
+          </li>
+        </ul>
+        <div class="mode dark">
+          <div class="moon-icon icon-container">
+            <i class="bi bi-moon-fill icon text"></i>
+          </div>
+          <div class="sun-icon icon-container">
+            <i class="bi bi-brightness-high icon text"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End of Navbar -->
+    <div class="card mb-3" style="max-width: 100%">
+      <!-- Start introduction to Diesel type -->
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="./img/mild-engine.png"
+            class="img-fluid rounded-start img-thumbnail fuel-image"
+            alt="Mild Hybrid engine"
+            style="margin-top: 55px"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 class="card-title">Mild Hybrid Engines</h2>
+            <p class="card-text">
+              Hybrid vehicles offer incredibly low emissions and combine a
+              standard engine with at least one electric motor. They generate
+              their electricity whilst you drive using two main techniques -
+              regenerative braking, and an electrical generator. Regenerative
+              braking harvests heat and kinetic energy usually wasted during
+              braking and converts it into electrical energy to be stored in the
+              battery whereas an electrical generator runs directly off the
+              combustion engine.
+            </p>
+            <p class="card-text">
+              When cruising, particularly at low speeds, a hybrid will draw its
+              power from the vehicle's fitted electric motor. When this speed
+              starts to increase, the hybrid will seamlessly integratee the
+              standard combustion engine in order to accommodate the greater
+              demand. In particular testing cicrumstances such as driving over
+              rough terrain or up a hill the behicle will use both systems
+              alongside each other to gain extra power and torque.
+            </p>
+            <p class="card-text">
+              One of the biggest benefits of a hybrid vehicle is that while its
+              main fuel source is still gasoline it requires a lot less of this
+              than a standard combustion engine vehicle and therefore running
+              costs are often minimal.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End of introduction to Petrol type -->
+      <!-- Start Pros and Cons -->
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img
+              src="./img/mild-fuel-pump.png"
+              class="card-img-top fuel-fuel-pump"
+              alt="Fuel pump"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <h3 class="card-title">Pros</h3>
+
+            <ul class="card-text" style="text-align: left; gap: 1px">
+              <li>
+                ✅ No different to drive than a regular petrol or diesel-powered
+                car.
+              </li>
+              <li>
+                <a href="#">✅</a> They don’t need to be plugged in to save
+                fuel, as is the case with plug-in hybrid models.
+              </li>
+              <li>
+                <a href="#">✅</a> They’re generally cheaper to buy than a full
+                hybrid or plug-in hybrid car.
+              </li>
+              <li>
+                <a href="#">✅</a> Fuel economy and CO2 emissions are improved,
+                reducing bill bills and VED tax.
+              </li>
+              <li>
+                <a href="#">✅</a> The technology works with manual and
+                automatic, and petrol and diesel models.
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3 class="card-title">Cons</h3>
+
+            <ul class="card-text" style="text-align: left; gap: 1px">
+              <li><a href="#">❌</a> They can’t run on electricity alone.</li>
+              <li>
+                <a href="#">❌</a> They produce more tailpipe emissions than
+                other kinds of hybrids.
+              </li>
+              <li>
+                <a href="#">❌</a> Full and plug-in hybrids are more economical.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Pros and Cons -->
+      <!-- Start of form -->
+      <div class="container-fluid mt-4">
+        <form class="mt-4" id="comment-form">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="col-md-6 mt-4">
+            <label for="comment" class="form-label">Comment</label>
+          </div>
+          <div class="col-md-6">
+            <textarea
+              class="form-control"
+              name="comment"
+              placeholder="Leave a comment here"
+              id="comment"
+              style="height: 100px"
+            ></textarea>
+          </div>
+          <div class="col-md-6 mt-4">
+            <button type="submit" class="btn btn-primary" id="add">Add</button>
+          </div>
+          <!-- Start of table -->
+          <table class="table mt-4" style="width: 100%">
+            <thead>
+              <tr class="table" style="border-top: 2px solid transparent">
+                <th scope="col" style="background: transparent">Name</th>
+                <th scope="col" style="background: transparent">Comment</th>
+              </tr>
+            </thead>
+            <tbody id="comment-list">
+              <!-- elements -->
+            </tbody>
+          </table>
+          <!-- End of table -->
+          <!-- End of form -->
+        </form>
+      </div>
+    </div>
+    <!-- Link to JavaScript -->
+    <script src="../../script.js"></script>
+    <script src="./Mild.js"></script>
   </body>
 </html>

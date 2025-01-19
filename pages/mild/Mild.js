@@ -1,6 +1,6 @@
 /*
 Project: Project 2 - Shop Front
-File: Diesel.js
+File: Mild.js
 Created Date: 19/01/2025
 Author: Jagdeep Tiwana
 */
@@ -14,7 +14,7 @@ class Comment {
 }
 
 // UI Class: Handle UI comments
-class Diesel {
+class Mild {
   addCommentToList(comment) {
     const list = document.getElementById("comment-list");
     const row = document.createElement("tr");
@@ -44,7 +44,7 @@ document
     const comments = new Comment(name, comment);
 
     // Instantiate UI
-    const diesel = new Diesel();
+    const mild = new Mild();
 
     // Validate
     if (name === "" || comment === "") {
@@ -52,10 +52,10 @@ document
       alert("Please fill in all fields");
     } else {
       // Add comment to list
-      diesel.addCommentToList(comments);
+      mild.addCommentToList(comments);
 
       // Clear fields
-      diesel.clearFields();
+      mild.clearFields();
     }
     e.preventDefault();
   });
