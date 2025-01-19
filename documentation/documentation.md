@@ -38,4 +38,33 @@ I have decided to upload the codes to github as I started the 10/01/2025 and som
 
 For this project I will use HTML, CSS and JavaScript to create a front-end for a website. I will use HTML to create the structure of the website, CSS to style the website and JavaScript to add interactivity to the website. I will also use Bootstrap to create a responsive layout for the website.
 
-When I first started the project, it wasn't structured files or the codes ie some of the CSS styles was in the HTML file and some in the CSS file. I decided to restructure the files and the codes so that it is easier to read and understand. I created a separate CSS file for the styles and a separate JavaScript file for the interactivity. I also created a separate HTML file for each page of the website.
+When I first started the project, it wasn't structured files or the codes ie some of the CSS styles was in the HTML file and some in the CSS file. I decided to restructure the files and the codes so that it is easier to read and understand. I created a one CSS file for the styles and a separate JavaScript files for the interactivity. I also created a separate HTML file for each page of the website.
+
+## RESOURCES
+
+The resources that I used for this project are:
+
+- [Bootstrap](https://getbootstrap.com/)
+- [W3Schools](https://www.w3schools.com/)
+- [SelectCarLeasing](https://www.selectcarleasing.co.uk/guides/fuel-types)
+- [google](https://www.google.com/)
+- [netCom](https://www.netcomlearning.com/)
+- [YouTube](https://www.youtube.com/)
+
+## CHALLENGES
+
+The challenges that I faced during this project are:
+
+- **<ins>Styling</ins>** - I found it difficult to style the website as I am not very good at CSS. I had to look up how to style certain elements and how to use CSS flex and grid to create a layout for the website.
+
+- **<ins>JavaScript</ins>** - I found it difficult to add interactivity to the website using JavaScript. I had to look up how to create a dark mode toggle and how to create a review system using JavaScript.
+
+- **<ins>Responsiveness</ins>** - I found it difficult to make the website responsive. I had to look up how to use the Bootstrap grid system to create a responsive layout for the website.
+
+## FUTURE IMPROVEMENTS
+
+The future improvements that I would like to make to this project are:
+
+- **<ins>Backend</ins>** - I would like to add a backend to this project so that users can create an account and login to the website. This would allow users to leave reviews and have them displayed on the website.
+
+- **<ins>Search</ins>** - I would like to add replies to comments and also likes and dislikes to comments. This would allow users to interact with each other and have discussions on the website.
